@@ -1,0 +1,130 @@
+/* General Header Styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00473E; /* Dark green */
+    color: white;
+    padding: 0;
+    border-bottom: 2px solid #FFD447;
+    position: relative;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem 2rem;
+  }
+  
+  .logo-container img {
+    height: 50px;
+  }
+  
+  .logo-container h1 {
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: #FFD447; /* Lemon yellow */
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Desktop Navbar */
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 2rem;
+    background-color: transparent;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+  
+  .nav ul li {
+    margin: 0;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .nav ul li a:hover {
+    color: #FFD447;
+  }
+  
+  .nav ul li.login a {
+    background-color: #FFD447;
+    color: #00473E;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  
+  .nav ul li.login a:hover {
+    background-color: #FFC107;
+  }
+  
+  /* Mobile Navbar */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #00473E;
+      z-index: 10;
+      padding: 1rem 0;
+      border-top: 2px solid #FFD447;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      padding: 0;
+      text-align: left;
+    }
+  
+    .nav ul li {
+      width: 100%;
+      padding: 0.5rem 1rem;
+    }
+  
+    .nav ul li a {
+      width: 100%;
+    }
+  }
+  

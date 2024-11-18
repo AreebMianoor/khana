@@ -1,38 +1,79 @@
-.App {
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* Main section */
+main {
+  background-color: #ffffff;
   text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #00473E; /* Matches Little Lemon's dark green theme */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #4b5563;
+  max-width: 65ch;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Footer */
+footer {
+  background-color: #00473E; /* Matches the header color */
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #FFD447; /* Yellow accent */
+}
+
+footer ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+footer ul li {
+  margin: 0 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+footer ul li a {
+  color: #FFD447; /* Yellow text for footer links */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer ul li a:hover {
+  color: #FFC107; /* Hover effect with lighter yellow */
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer ul li {
+    margin: 5px 0;
   }
 }
