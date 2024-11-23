@@ -1,0 +1,63 @@
+.confirmed-booking {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fef8ec;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .confirmation-header {
+    margin-bottom: 2rem;
+    color: #4caf50; /* Nice green for success */
+  }
+  
+  .confirmation-header h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .confirmation-header p {
+    font-size: 1.2rem;
+  }
+  
+  .confirmation-details {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .confirmation-details h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .confirmation-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .confirmation-details li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .confirmation-details strong {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .confirmation-footer {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+  
+  .confirmation-footer strong {
+    color: #333;
+  }
+  

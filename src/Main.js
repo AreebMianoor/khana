@@ -1,14 +1,18 @@
 import React from "react";
+import "./Main.css";
 
-function Main() {
+const Main = () => {
   return (
-    <main>
-      <section>
-        <h2>Welcome to Little Lemon</h2>
-        <p>Experience the best dining experience with fresh, delicious meals made with love.</p>
-      </section>
-    </main>
+    <div className="main-hero">
+      <div className="hero-content">
+        <h1>Welcome to Little Lemon</h1>
+        <p>
+          Experience the finest dining with fresh ingredients, exquisite
+          ambiance, and exceptional service.
+        </p>
+      </div>
+    </div>
   );
-}
+};
 
 export default Main;

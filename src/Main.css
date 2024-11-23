@@ -1,0 +1,22 @@
+.main-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f7f8fa;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    color: #00473e;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    max-width: 600px;
+  }
+  
