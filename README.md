@@ -45,8 +45,8 @@ Whether you’re building a personal portfolio, an e-commerce site, or a cutting
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/little-lemon-react-cookbook.git
-cd little-lemon-react-cookbook
+git clone https://github.com/AreebMianoor/khana.git
+cd khana
 
 ### 2. Install Dependencies
 ```bash
