@@ -17,8 +17,10 @@
   
   .logo {
     height: 50px;
+    width: 50px;
     margin-right: 10px;
   }
+  
   
   .site-name {
     font-size: 1.5rem;

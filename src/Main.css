@@ -6,17 +6,63 @@
     height: 100vh;
     background-color: #f7f8fa;
     text-align: center;
+    position: relative;
+    overflow: hidden;
   }
   
   .hero-content h1 {
     font-size: 3rem;
     color: #00473e;
     margin-bottom: 1rem;
+    animation: fade-in 1.5s ease-in-out;
   }
   
   .hero-content p {
     font-size: 1.2rem;
     color: #6b7280;
     max-width: 600px;
+    animation: slide-in 2s ease-in-out;
+  }
+  
+  .cta-button {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffd447;
+    color: #00473e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffc107;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
   
